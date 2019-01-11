@@ -17,15 +17,65 @@
     <script src="~/assets/js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-    <div class="container">
+
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Centro Escuela Bartlett</a>
+        <ul class="navbar-nav px-5">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid" style="background-color:gray;">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">
+                                <span data-feather="home"></span>
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Home/AcercaDe">
+                                <span data-feather="log-in"></span>
+                                Login
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Home/AcercaDe">
+                                <span data-feather="file"></span>
+                                Alta
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+                @RenderBody()
+            </main>
+        </div>
         <!-- por medio de RenderBody() se agregan las views a este layout -->
-        @RenderBody()
+
     </div>
+
 
 
     <script src="~/assets/js/bootstrap.min.js"></script>
     <script src="~/assets/js/bootstrap.bundle.min.js"></script>
     <script src="~/assets/js/popper_1129.min.js"></script>
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
 
 </body>
 </html>
