@@ -1,0 +1,5 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/packages/Microsoft.AspNet.Razor.3.2.4/lib/net45/System.Web.Razor.dll
